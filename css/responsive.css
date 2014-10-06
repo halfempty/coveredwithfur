@@ -1,0 +1,888 @@
+/*-----------------------------------------------------------------------------------
+iPhone
+-----------------------------------------------------------------------------------*/
+
+@media only screen and (max-width: 750px) {
+
+	/*-----------------------------------------------------------------------------------
+	WordPress Defaults
+	-----------------------------------------------------------------------------------*/
+
+	.alignnone {
+	    margin: 0 auto;
+	    max-width: 100%;
+	    position: relative;
+	}
+	
+	.aligncenter,
+	div.aligncenter {
+	    margin: 0 auto;
+	    max-width: 100%;
+	    position: relative;
+	}
+	
+	a img.alignnone {
+	    margin: 0 auto;
+	}
+	
+	a img.aligncenter {
+	    margin: 0 auto;
+	}
+	
+	.wp-caption p.wp-caption-text {
+		display: none;
+	}
+	
+	/*-----------------------------------------------------------------------------------
+	Header
+	-----------------------------------------------------------------------------------*/
+
+	#header,
+	.page-template-template-home-php #header {
+		width: 100%;
+		padding: 13px 0;
+	}
+
+	#header .logo {
+		float: none;
+		margin: 0 auto 0 auto!important;
+		text-align: center;
+	}
+
+	/*-----------------------------------------------------------------------------------
+	Navigation
+	-----------------------------------------------------------------------------------*/
+	
+	a.tj-mobile-menu {
+		display: inline-block;
+	}
+	
+	#header nav {
+		display: none;
+	}
+	
+	#tj-mobile-menu nav {
+		max-width: 90%;
+		overflow: auto;
+	}
+	
+	/*-----------------------------------------------------------------------------------
+	Page Template - Home
+	-----------------------------------------------------------------------------------*/
+	
+	.tj-home-slider,
+	.page-template-template-home-php .tj-home-slider .slides li {
+		height: 400px;
+	}
+	
+	.page-template-template-home-php .tj-home-slider .entry-content {
+		max-width: 95%;
+	}
+	
+	.page-template-template-home-php .tj-home-slider .entry-content h1, 
+	.page-template-template-home-php .tj-home-slider .entry-content h2, 
+	.page-template-template-home-php .tj-home-slider .entry-content h3, 
+	.page-template-template-home-php .tj-home-slider .entry-content h4, 
+	.page-template-template-home-php .tj-home-slider .entry-content h5, 
+	.page-template-template-home-php .tj-home-slider .entry-content h6 {
+		font-size: 2em;
+	}
+	
+	.page-template-template-home-php .tj-home-slider .entry-content p {
+		font-size: 1.25em;
+		display: none;
+	}
+	
+	.page-template-template-home-php .tj-home-slider .tj-direction-nav {
+		display: none;
+	}
+	
+	.tj-gallery-wrapper {
+		padding: 35px 0 35px 0;
+	}
+	
+	.tj_gallery_message {
+		padding: 0 0 37px 0;
+	}
+	
+	.tj-gallery-content {
+		max-width: 95%;
+	}
+
+	.tj-gallery	{
+		margin: 0 auto;
+	}
+	
+	.tj-gallery article {
+		max-width: 136px;
+		width: 47.5%;
+		margin: 0 2.5% 4% 2.5%;
+	}
+	
+	.tj-gallery .gallery-hero, 
+	.tj-gallery .gallery-hero a {
+		width: 100%;
+		height: 100%;
+	}
+	
+	.tj-gallery article:nth-child(2n+2) {
+		margin-right: 2.5%;
+	}
+	
+	.tj-home-testimonials-slider .tj-testimonial-direction-nav {
+		display: none;
+	}
+
+	.tj-home-testimonials .entry-content p {
+		font-size: 98%;
+	}
+	
+	/*-----------------------------------------------------------------------------------
+	Page Template - Gallery Taxonomy
+	-----------------------------------------------------------------------------------*/
+	
+	.tax-gallery-type article.taxonomy-description {
+		max-width: 90%;
+		margin: 0 auto;
+	}
+	
+	/*-----------------------------------------------------------------------------------
+	Gallery - Paginated
+	-----------------------------------------------------------------------------------*/
+	
+	.page-template-template-gallery-php article.page {
+		width: 90%;
+		margin: 0 auto;
+	}
+	
+	/*-----------------------------------------------------------------------------------
+	Gallery - Filtered
+	-----------------------------------------------------------------------------------*/
+	
+	.page-template-template-gallery-filtered-php article.page {
+		width: 95%;
+	}
+	
+	.page-template-template-gallery-filtered-php .tj-gallery-content {
+		max-width: 95%;
+	}
+	
+	.page-template-template-gallery-filtered-php .tj-gallery {
+		margin: 0 auto;
+	}
+	
+	#sort-by {
+		margin: 40px auto;
+	}
+	
+	/*-----------------------------------------------------------------------------------
+	Single Gallery
+	-----------------------------------------------------------------------------------*/
+	
+	.single.single-gallery #primary {
+		width: 100%!important;
+	}
+	
+	.tj-cpt-gallery {
+		margin: 0 auto;	
+	}
+	
+	.tj-cpt-gallery article.gallery {
+		width: 90%;
+	}
+	
+	.single-gallery-media {
+		width: 90%;
+		margin: 0 auto;	
+	}
+	
+	.tj-image-description {
+		width: 90%;
+		margin: 0 auto;	
+	}
+	
+	.tj-image-caption {
+		display: none;
+	}
+	
+	.single-gallery .pagination-gallery {
+		display: none;
+	}
+	
+	.single-gallery-meta {
+		width: 45%;
+		margin: 0 5% 0 0;
+	}
+	
+	/*-----------------------------------------------------------------------------------
+	Blog Posts
+	-----------------------------------------------------------------------------------*/
+	
+	.blog #primary,
+	.single #primary,
+	.archive #primary,
+	.search #primary {
+		width: 90%;
+	} 
+	
+	.blog .entry-content, 
+	.single .entry-content, 
+	.archive .entry-content, 
+	.search .entry-content {
+		max-width: 100%;
+		float: none;
+	}
+	
+	.tj_post_footer_meta {
+		display: none;
+	}
+	
+	.tj-gallery-nav {
+		display: none;
+	}
+	
+	.tj-direction-nav li a.tj-next {
+		right: 0;
+	}
+	
+	.tj-direction-nav li a.tj-prev {
+		left: 0;
+	}
+	
+	.commentlist {
+		max-width: 100%;
+		margin: 0 auto;
+	}
+	
+	/*-----------------------------------------------------------------------------------
+	Single Gallery
+	-----------------------------------------------------------------------------------*/
+	
+	.tj-no-image .single-gallery-hero {
+		padding: 80px 0 0 0;
+	}
+	
+	.single-gallery-hero {
+		min-height: auto!important;
+	}
+	
+	.single-gallery-media .tj-direction-nav li a.tj-next {
+		right: 10px;
+	}
+	
+	.single-gallery-media .tj-direction-nav li a.tj-prev {
+		left: 10px;
+	}
+	
+	/*-----------------------------------------------------------------------------------
+	Blog Posts Comments
+	-----------------------------------------------------------------------------------*/
+
+	.commentlist .depth-1,
+	.commentlist .depth-2,
+	.commentlist .depth-3,
+	.commentlist .depth-4,
+	.commentlist .depth-5,
+	.commentlist .depth-6 {
+		width: 100%;
+		margin-left: auto;
+		margin-right: auto;
+	}
+	
+	/*-----------------------------------------------------------------------------------
+	Navigation
+	-----------------------------------------------------------------------------------*/
+	
+	.pagination-default {
+		max-width: 90%;
+	}
+	
+	/*-----------------------------------------------------------------------------------
+	Widgets
+	-----------------------------------------------------------------------------------*/
+	
+	.footer-widget-left, 
+	.footer-widget-right {
+		width: 90%;
+		margin: 0 auto;
+		float: none;
+		display: inline-block;
+		clear: both;
+	}
+	
+	.tj_flickr_widget {
+		overflow: hidden;
+	}
+	
+	/*-----------------------------------------------------------------------------------
+	Page Template - Default
+	-----------------------------------------------------------------------------------*/
+	
+	.page-template-default article.page {
+		max-width: 90%;
+		padding: 80px 0 0 0;
+	}
+	
+	.page-template-template-page-sidebar-php #primary {
+		max-width: 90%;
+		margin: 80px auto 0 auto;
+		padding: 0;
+		float: none;
+		border: none;
+	}
+	
+	.page-template-template-page-sidebar-php #sidebar {
+		width: 100%;
+		max-width: 90%;
+		margin: 80px auto 0 auto;
+		padding: 0;
+		float: none;
+	}
+	
+	/*-----------------------------------------------------------------------------------
+	Page Template - Full Width
+	-----------------------------------------------------------------------------------*/
+	
+	.page-template-template-page-full-php article.page {
+		max-width: 90%;
+		margin: 0 auto;
+	}
+	
+	.page-template-template-page-full-php article.page .entry-content {
+		padding: 80px 0 0 0;
+	}
+	
+	/*-----------------------------------------------------------------------------------
+	Page Template - Contact
+	-----------------------------------------------------------------------------------*/
+	
+	.page-template-template-contact-php article.page {
+		max-width: 90%;
+		margin: 0 auto;
+	}
+	
+	/*-----------------------------------------------------------------------------------
+	Shortcodes
+	-----------------------------------------------------------------------------------*/
+	
+	.tj-toggle-inner {
+		width: 91.5%!important;
+	}
+	
+	/*-----------------------------------------------------------------------------------
+	Footer
+	-----------------------------------------------------------------------------------*/
+	
+	.footer-inner-wrap {
+		max-width: 90%;
+	}
+}
+
+/*-----------------------------------------------------------------------------------
+iPad
+-----------------------------------------------------------------------------------*/
+
+@media screen and (min-width: 751px) and (max-width: 970px) {
+
+	body {
+		font-size: 94%;
+	}
+
+	/*-----------------------------------------------------------------------------------
+	Header
+	-----------------------------------------------------------------------------------*/
+	
+	#header {
+		max-width: 90%;
+		padding: 15px 0;
+		z-index: 999;
+	}
+	
+	/*-----------------------------------------------------------------------------------
+	Navigation
+	-----------------------------------------------------------------------------------*/
+	
+	a.tj-mobile-menu {
+		display: inline-block;
+	}
+	
+	#header nav {
+		display: none;
+	}
+	
+	#tj-mobile-menu nav {
+		max-width: 75%;
+		overflow: auto;
+	}
+	
+	/*-----------------------------------------------------------------------------------
+	Footer
+	-----------------------------------------------------------------------------------*/
+	
+	.footer-widgets,
+	.footer-inner {
+		max-width: 95%;
+		margin: 0 auto;
+	}
+	
+	/*-----------------------------------------------------------------------------------
+	Page Template - Home
+	-----------------------------------------------------------------------------------*/
+	
+	.tj-gallery-content {
+		max-width: 100%;
+	}
+	
+	.tj_gallery_message {
+		max-width: 680px;
+	}
+
+	.tj-gallery	{
+		max-width: 680px;
+		margin: 0 auto;
+	}
+	
+	.tj-gallery article {
+		width: 27.34375%;
+		margin: 0 8.98438% 4% 0;
+	}
+	
+	.tj-gallery .gallery-hero, 
+	.tj-gallery .gallery-hero a {
+		width: 100%;
+		height: 100%;
+	}
+	
+	.tj-gallery article:nth-child(3n+3) {
+		margin-right: 0;
+	}
+	
+	.tj-home-testimonials {
+		max-width: 95%;
+	}
+	
+	
+	/*-----------------------------------------------------------------------------------
+	Page Template - Gallery Taxonomy
+	-----------------------------------------------------------------------------------*/
+	
+	.tax-gallery-type article.taxonomy-description {
+		max-width: 680px;
+		margin: 0 auto;
+	}
+		
+	/*-----------------------------------------------------------------------------------
+	Page Template - Gallery Filtered
+	-----------------------------------------------------------------------------------*/
+
+	.page-template-template-gallery-filtered-php article.page,
+	#sort-by ul {
+		max-width: 90%;
+		margin: 0 auto;
+	}
+
+	.page-template-template-gallery-filtered-php .tj-gallery-content {
+		overflow: hidden;
+	}
+	
+	.page-template-template-gallery-filtered-php .tj-gallery {
+		max-width: 99%;
+		margin: 0 auto;
+	}
+	
+	.page-template-template-gallery-filtered-php .isotope {
+		margin-right: -4%;
+	}
+	
+	.page-template-template-gallery-filtered-php .tj-gallery article {
+		max-width: 185px;
+		margin: 0 8.98438% 4% 0;
+	}
+
+	.page-template-template-gallery-filtered-php .tj-gallery article:nth-child(3n+3) {
+		margin: 0 8.98438% 4% 0;
+	}
+	
+	/*-----------------------------------------------------------------------------------
+	Page Template - Standard
+	-----------------------------------------------------------------------------------*/
+	
+	.page-template-default article.page {
+		width: 90%;
+	}
+	
+	.page-template-template-page-sidebar-php #content {
+		max-width: 95%;
+		margin: 0 auto;
+	}
+	
+	.page-template-template-page-sidebar-php #primary {
+		max-width: 65%;
+		margin: 145px auto 80px auto;
+		padding: 0 5% 0 0;	
+		float: left;
+		border-right: 1px solid #ddd;
+	}
+	
+	.page-template-template-page-sidebar-php #sidebar {
+		width: 25%;
+		margin-top: 145px;
+		padding-bottom: 80px;
+		float: right;
+	}
+	
+	.page-template-template-page-sidebar-php article.page .entry-content {
+		max-width: 710px;
+		margin: 0 auto;
+		float: left;
+	}
+	
+	/*-----------------------------------------------------------------------------------
+	Page Template - Page Full Width
+	-----------------------------------------------------------------------------------*/
+	
+	.page-template-template-page-full-php article.page {
+		max-width: 90%;
+		margin: 0 auto;
+	}
+	
+	.page-template-template-page-full-php article.page .entry-content {
+		max-width: 100%;
+	}
+	
+	/*-----------------------------------------------------------------------------------
+	Page Template - Contact
+	-----------------------------------------------------------------------------------*/
+	
+	.page-template-template-contact-php article.page {
+		max-width: 90%;
+		margin: 0 auto;
+	}
+	
+	/*-----------------------------------------------------------------------------------
+	Page Template - Search
+	-----------------------------------------------------------------------------------*/
+	
+	.page-template-template-page-search-php article.page .entry-content {
+		width: 90%;
+	}
+	
+	/*-----------------------------------------------------------------------------------
+	Page Template - Single Gallery
+	-----------------------------------------------------------------------------------*/
+	
+	.tj-cpt-gallery article.gallery {
+		max-width: 90%;
+	}
+	
+	.tj-no-image .single-gallery-hero {
+		padding: 80px 0 0 0;
+	}
+	
+	.single-gallery-media {
+		max-width: 90%;
+	}
+	
+	.single-gallery-media .tj-direction-nav li a.tj-next {
+		right: 10px;
+	}
+	
+	.single-gallery-media .tj-direction-nav li a.tj-prev {
+		left: 10px;
+	}
+	
+	/*-----------------------------------------------------------------------------------
+	Blog Posts
+	-----------------------------------------------------------------------------------*/
+	
+	article.post {
+		width: 90%;
+	}
+	
+	.tj_post_footer_meta {
+		display: none;
+	}
+	
+	.blog .entry-content, 
+	.single .entry-content, 
+	.archive .entry-content, 
+	.search .entry-content {
+		max-width: 820px;
+		float: none;
+	}
+	
+	.tj-direction-nav li a.tj-next {
+		right: 0;
+	}
+	
+	.tj-direction-nav li a.tj-prev {
+		left: 0;
+	}
+	
+	.commentlist {
+		margin: 0 auto;
+	}
+	
+	/*-----------------------------------------------------------------------------------
+	Gallery - Paginated
+	-----------------------------------------------------------------------------------*/
+	
+	.page-template-template-gallery-php article.page {
+		max-width: 90%;
+		margin: 0 auto;
+	}
+	
+	/*-----------------------------------------------------------------------------------
+	Widgets
+	-----------------------------------------------------------------------------------*/
+	
+	.tj_flickr_widget {
+		overflow: hidden;
+	}
+	
+	/*-----------------------------------------------------------------------------------
+	Shortcodes
+	-----------------------------------------------------------------------------------*/
+	
+	.tj-toggle-inner {
+		width: 95.6%!important;
+	}
+	
+}
+
+/*-----------------------------------------------------------------------------------
+iPad 1
+-----------------------------------------------------------------------------------*/
+
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (-webkit-min-device-pixel-ratio: 1){
+	
+	/*-----------------------------------------------------------------------------------
+	Navigation
+	-----------------------------------------------------------------------------------*/
+	
+	a.tj-mobile-menu {
+		display: inline-block;
+	}
+	
+	#header nav {
+		display: none;
+	}
+	
+	#tj-mobile-menu nav {
+		max-width: 75%;
+		overflow: auto;
+	}
+
+	/*-----------------------------------------------------------------------------------
+	Page Template - Single Gallery
+	-----------------------------------------------------------------------------------*/
+	
+	.single-gallery-media {
+		max-width: 90%;
+	}
+	
+	.tj-direction-nav li a.tj-next {
+		right: 10px;
+	}
+	
+	.tj-direction-nav li a.tj-prev {
+		left: 10px;
+	}
+	
+	/*-----------------------------------------------------------------------------------
+	Shortcodes
+	-----------------------------------------------------------------------------------*/
+	
+	.tj-toggle-inner {
+		width: 95.1%!important;
+	}
+
+}
+
+/*-----------------------------------------------------------------------------------
+Small Monitor
+-----------------------------------------------------------------------------------*/
+
+@media screen and (min-width: 970px) and (max-width: 1178px) {
+
+	/*-----------------------------------------------------------------------------------
+	Header
+	-----------------------------------------------------------------------------------*/
+	
+	#header {
+		max-width: 95%;
+	}
+	
+	/*-----------------------------------------------------------------------------------
+	Footer
+	-----------------------------------------------------------------------------------*/
+	
+	.footer-widgets,
+	.footer-inner {
+		max-width: 95%;
+		margin: 0 auto;
+	}
+	
+	/*-----------------------------------------------------------------------------------
+	Page Template - Home
+	-----------------------------------------------------------------------------------*/
+	
+	.tj-gallery-content {
+		max-width: 100%;
+	}
+	
+	.tj_gallery_message {
+		max-width: 936px;
+	}
+
+	.tj-gallery	{
+		max-width: 936px;
+		margin: 0 auto;
+	}
+	
+	.tj-gallery article {
+		width: 21.48438%;
+		margin: 0 4.6875% 40px 0;
+	}
+	
+	.tj-gallery .gallery-hero, 
+	.tj-gallery .gallery-hero a {
+		width: 100%;
+		height: 100%;
+	}
+	
+	.tj-gallery article:nth-child(4n+4) {
+		margin-right: 0;
+	}
+	
+	/*-----------------------------------------------------------------------------------
+	Page Template - Gallery Taxonomy
+	-----------------------------------------------------------------------------------*/
+	
+	.tax-gallery-type article.taxonomy-description {
+		max-width: 936px;
+		margin: 0 auto;
+	}
+	
+	/*-----------------------------------------------------------------------------------
+	Single Gallery
+	-----------------------------------------------------------------------------------*/
+	
+	.single.single-gallery #primary {
+		max-width: 100%;
+	}
+	
+	.tj-cpt-gallery article.gallery {
+		padding: 40px 0 0 0;
+	}
+	
+	.single-gallery-media .tj-direction-nav li a.tj-next {
+		right: 10px;
+	}
+	
+	.single-gallery-media .tj-direction-nav li a.tj-prev {
+		left: 10px;
+	}
+	
+	/*-----------------------------------------------------------------------------------
+	Gallery - Paginated
+	-----------------------------------------------------------------------------------*/
+	
+	.page-template-template-gallery-php article.page {
+		max-width: 936px;
+		margin: 0 auto;
+	}
+	
+	/*-----------------------------------------------------------------------------------
+	Page Template - Gallery Filtered
+	-----------------------------------------------------------------------------------*/
+	
+	.page-template-template-gallery-filtered-php article.page,
+	#sort-by ul {
+		max-width: 936px;
+		margin: 0 auto;
+	}
+	
+	.page-template-template-gallery-filtered-php .tj-gallery {
+		margin: 0 auto;
+	}
+	
+	/*-----------------------------------------------------------------------------------
+	Page Template - Page Full Width
+	-----------------------------------------------------------------------------------*/
+	
+	.page-template-template-page-full-php article.page .entry-content {
+		max-width: 1024px;
+	}
+	
+	/*-----------------------------------------------------------------------------------
+	Page Template - Standard
+	-----------------------------------------------------------------------------------*/
+	
+	.page-template-default article.page {
+		width: 90%;
+	}
+	
+	/*-----------------------------------------------------------------------------------
+	Page Template - Page Full Width
+	-----------------------------------------------------------------------------------*/
+	
+	.page-template-template-page-full-php article.page {
+		max-width: 90%;
+		margin: 0 auto;
+	}
+	
+	.page-template-template-page-full-php article.page .entry-content {
+		max-width: 100%;
+	}
+	
+	/*-----------------------------------------------------------------------------------
+	Page Template - Contact
+	-----------------------------------------------------------------------------------*/
+	
+	.page-template-template-contact-php article.page {
+		max-width: 90%;
+		margin: 0 auto;
+	}
+	
+	/*-----------------------------------------------------------------------------------
+	Shortcodes
+	-----------------------------------------------------------------------------------*/
+	
+	.tj-toggle-inner {
+		width: 96.8%!important;
+	}
+	
+	/*-----------------------------------------------------------------------------------
+	Blog
+	-----------------------------------------------------------------------------------*/
+	
+	.blog #primary, 
+	.single #primary, 
+	.archive #primary, 
+	.search #primary {
+		max-width: 95%;
+		float: none;
+	}
+	
+	.blog .entry-content, 
+	.single .entry-content, 
+	.archive .entry-content, 
+	.search .entry-content {
+		max-width: 95%;
+		float: none;
+	}
+	
+	.blog .tj_post_footer_meta, 
+	.single .tj_post_footer_meta, 
+	.archive .tj_post_footer_meta, 
+	.search .tj_post_footer_meta {
+		display: none;
+	}
+	
+	.commentlist {
+		max-width: 95%;
+		margin: 0 auto;
+	}
+
+}

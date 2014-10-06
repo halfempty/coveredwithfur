@@ -1,0 +1,113 @@
+*** Carajillo Changelog ***
+
+June 2013 - Version 1.0
+	
+	* First Release
+	
+19 July 2013 - Version 1.0.1
+
+	* header.php
+		- mobile menu naming convention improvement
+	* jquery.custom.js
+		- mobile menu naming convention improvement
+	* footer.php
+		- amend theme option output to footer copyright area
+		
+9th October 2013 - Version 1.0.2
+
+	* content-cpt-slider.php
+		- UX improvements
+		- Flexslider improvements
+	* content-cpt-testimonials.php
+		- Flexslider improvements
+	* responsive.css
+		- Responsive UI improvements
+	* functions.php 
+		- Updated to use native jQuery.
+	* tj-theme-functions.php
+		- improvements and fixes
+		- tj_post_footer_meta function date bug fix
+		- Flexslider improvements
+	* jquery.flexslider-min.js - updated to latest version
+	
+9th October 2013 - Version 1.0.3
+	
+	* functions.php 
+		- Added new image size to handle very large images
+	* tj-theme-functions.php
+		- tj_slider_background and tj_gallery_background_init update to new image sizes.
+
+20th December 2013 - Version 1.0.4
+
+	* functions.php 
+		- Child theme improvements	
+		- WP Login login logo improvements
+		- added new page widget area
+	* tj-theme-functions.php
+		- tj_head_css() - handle new options
+		- improvements to 'Gallery Backstretch' functions
+		- tj_gallery()- added captions to slider
+		 - slideshow responsive UI improvements
+	
+	* sidebar.php - handle new page widget
+	* theme-cpt-gallery-meta.php - added option to disable single gallery header image
+	* searchform.php - bug fix
+	* search.php - clean up and code improvements
+	* jquery-custom.js - added sticky header feature
+	* content-standard.php - code clean up
+	* content-gallery.php - code clean up
+	* content-image.php - code clean up
+	* content-video.php - code clean up
+	* content-audio.php - code clean up
+	* content-link.php - code clean up
+	* content-quote.php - code clean up
+	* taxonomy-gallery-type.php - code clean up
+	* options.php 
+		- new color options
+		- add footer widgets to homepage
+	* footer.php added footer widget option
+	* content-cpt-slider.php - slideshow UI improvements
+	* content-cpt-testimonials.php - slideshow UI improvements	
+	* responsive.css - global UI improvements for small screens
+	* header.php 
+		- code clean up
+		- responsive nav improvements
+	
+	ADDED
+	* template-page-search.php	
+	* content-none-search.php
+	* template-page-sidenar.php
+		
+	REMOVED
+	* template-archives.php - depreciated - version 1.0.4
+		
+20th Jan 2014 - Version 1.0.5
+	
+	* functions.php - fix for fontAwesome include
+	* tj-theme-functions.php 
+		- added loading spinner to slideshows
+		- added body class for fixed header
+		- amended header-wrap opacity background color, if sticky header disabled
+		- fix generic button color bug
+	* style.css - UI improvements to dropdown menu
+	* responsive.css - UI improvements to dropdown menu
+	* jquery-custom.js - UI improvements to dropdown menu
+	* header.php - responsive menu improvements
+	* options.php - added fixed header option
+	* theme-cpt-slider.php - added drag & drop re-order
+	
+	ADDED
+	* css/font-awesome.min.css
+	* css/font-awesome-ie7.min.css
+	* framework/js/tj_slider_sort.js - added drag & drop re-order
+	
+24th Feb 2014 - Version 1.0.6
+
+	* functions.php - amend google font include
+	* tj-theme-functions.php - add post meta
+	* options.php - added blog options
+	* jquery.custom.js - scrollTop for responsive menu
+	* responsive.css - iphone improvements to portfolios
+	* style.css - version update
+	
+
