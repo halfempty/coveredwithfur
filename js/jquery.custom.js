@@ -26,21 +26,6 @@ jQuery(window).ready(function() {
 		});
 	}
 	
-	/*-----------------------------------------------------------------------------------*/
-	/*	Responsive Menu
-	/*-----------------------------------------------------------------------------------*/
-	
-	jQuery('.tj-header-menu').clone().appendTo('#tj-mobile-menu');
-	jQuery(function() {
-		jQuery('.tj-mobile-menu').click(function() {			
-			jQuery('#tj-mobile-menu').slideToggle();
-			
-			jQuery('html, body').animate({
-				scrollTop: 0
-			});
-		  	return false;
-		});
-	});
 	
 	/*-----------------------------------------------------------------------------------*/
 	/*	Gallery Filter
@@ -70,31 +55,4 @@ jQuery(window).ready(function() {
 	    });
 	}
 	
-	/*-----------------------------------------------------------------------------------*/
-	/*	Sticky Header
-	/*-----------------------------------------------------------------------------------*/
-	
-    var tjstickthatHeader = jQuery('.header-wrap');
-
-    jQuery(window).scroll(function() {
-        if( tjstickthatHeader.offset().top > 100 ) {
-            tjstickthatHeader.addClass('sticky')
-        } else {
-            tjstickthatHeader.removeClass('sticky')
-        }
-    });
-    doResize();
-    jQuery(window).on('resize', doResize);
 });
-
-/*-----------------------------------------------------------------------------------*/
-/*	Dynamic Header Height As Browser Sizes Changes
-/*-----------------------------------------------------------------------------------*/
-
-function doResize() {
-	var headerHeight = jQuery('.header-wrap').outerHeight();
-	
-	if ( headerHeight ) {
-		jQuery('#tj-mobile-menu nav').css('margin-top', headerHeight);
-	}
-}

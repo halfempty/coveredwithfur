@@ -328,48 +328,7 @@ function tj_admin_css($content) {
 }
 add_filter( 'tj_add_admin_css', 'tj_admin_css' );
 
-/*-----------------------------------------------------------------------------------*/
-/* Build Custom CSS File
-/*-----------------------------------------------------------------------------------*/
- 
-function tj_add_admin_css() {
-    $output = '';
-    if( apply_filters('tj_add_admin_css', $output) ) {
-    	$permalink_structure = get_option('permalink_structure');
-    	$url = home_url() .'/tj-admin-options.css?'. time();
-    	if(!$permalink_structure) $url = home_url() .'/?page_id=tj-admin-options.css';
-        echo '<link rel="stylesheet" href="'. $url .'" type="text/css" media="screen" />' . "\n";
-    }
-}
-add_action( 'wp_head', 'tj_add_admin_css', 12 );
 
-/*-----------------------------------------------------------------------------------*/
-/* Link To Custom CSS File
-/*-----------------------------------------------------------------------------------*/
-
-function tj_create_admin_css() {
-	$permalink_structure = get_option('permalink_structure');
-	$show_css = false;
-
-	if($permalink_structure){
-		if( !isset($_SERVER['REQUEST_URI']) ){
-		    $_SERVER['REQUEST_URI'] = substr($_SERVER['PHP_SELF'], 1);
-		    if(isset($_SERVER['QUERY_STRING'])){ $_SERVER['REQUEST_URI'].='?'.$_SERVER['QUERY_STRING']; }
-		}
-		$url = (isset($GLOBALS['HTTP_SERVER_VARS']['REQUEST_URI'])) ? $GLOBALS['HTTP_SERVER_VARS']['REQUEST_URI'] : $_SERVER["REQUEST_URI"];
-		if(preg_replace('/\\?.*/', '', basename($url)) == 'tj-admin-options.css') $show_css = true;
-	} else {
-		if(isset($_GET['page_id']) && $_GET['page_id'] == 'tj-admin-options.css') $show_css = true;
-	}
-
-	if($show_css){
-	    $output = '';
-		header('Content-Type: text/css');
-		echo apply_filters('tj_add_admin_css', $output);
-		exit;
-	}
-}
-add_action( 'init', 'tj_create_admin_css' );
 
 /*-----------------------------------------------------------------------------------*/
 /* Remove the_content <!-- More --> Anchor
@@ -400,22 +359,6 @@ function tj_custom_ico() {
 
 add_action('wp_head', 'tj_custom_ico');
 
-/*-----------------------------------------------------------------------------------*/
-/* Add Favicon
-/*-----------------------------------------------------------------------------------*/
-
-function tj_custom_favicon() {
-	if ( of_get_option('favicon_uploader') != '') {
-		echo '<link rel="shortcut icon" href="'. of_get_option('favicon_uploader') .'" />'."\n";
-		echo '<link rel="icon" href="'. of_get_option('favicon_uploader') .'" type="image/x-ico" />';
-	}
-	else { ?>
-		<link rel="shortcut icon" href="<?php echo get_stylesheet_directory_uri() ?>/img/favicon.png" />
-		<link rel="icon" href="<?php echo get_stylesheet_directory_uri() ?>/img/favicon.png" type="image/x-ico" />
-	<?php }
-}
-
-add_action('wp_head', 'tj_custom_favicon');
 
 /*-----------------------------------------------------------------------------------*/
 /* Post Caption
