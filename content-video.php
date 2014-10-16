@@ -1,3 +1,5 @@
+<!-- content-video.php -->
+
 <article id="post-<?php the_ID(); ?>" <?php post_class('clearfix'); ?>>
 
 	<?php tj_video_embed( $post->ID ); ?>

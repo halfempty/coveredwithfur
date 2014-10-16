@@ -1,9 +1,9 @@
+<!-- content-gallery.php -->
+
 <article id="post-<?php the_ID(); ?>" <?php post_class('clearfix'); ?>>
 
 	<div class="tj-gallery-blog">
-
 		<?php tj_gallery( $post->ID, 'featured-img-full' ); ?>
-	
 	</div>
 	
 	<?php tj_post_footer_meta(); ?>

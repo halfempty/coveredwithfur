@@ -1,3 +1,5 @@
+<!-- searchform.php -->
+
 <form method="get" id="searchform" action="<?php echo home_url(); ?>/">
 
 	<fieldset>

@@ -2,8 +2,6 @@
 /*
 Template Name: Page - Contact
 */
-?>
-<?php 
 
 $nameError = '';
 $emailError = '';
@@ -55,7 +53,9 @@ if(isset($_POST['submitted'])) {
 	
 } ?>
 <?php get_header(); ?>
-	
+
+<!-- template-contact.php -->
+
 <div id="content" class="clearfix">
 
 	<div id="primary" class="clearfix">			

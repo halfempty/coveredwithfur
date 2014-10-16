@@ -14,6 +14,15 @@
 	<script type="text/javascript" src="//use.typekit.net/mzu7zej.js"></script>
 	<script type="text/javascript">try{Typekit.load();}catch(e){}</script>
 
+	<!-- Fav Icons: Browser, iOS, Windows 8 -->
+	<link rel="shortcut icon" href="<?php echo get_stylesheet_directory_uri() ?>/img/favicons/favicon.ico">
+	<link rel="apple-touch-icon" sizes="114x114" href="<?php echo get_stylesheet_directory_uri() ?>/img/favicons/favicon-114.png" />
+	<link rel="apple-touch-icon" sizes="72x72" href="<?php echo get_stylesheet_directory_uri() ?>/img/favicons/favicon-72.png" />
+	<link rel="apple-touch-icon" href="<?php echo get_stylesheet_directory_uri() ?>/img/favicons/favicon-57.png" />
+	<meta name="application-name" content="<?php bloginfo( 'name' ); ?>"/> 
+	<meta name="msapplication-TileColor" content="#ffffff"/> 
+	<meta name="msapplication-TileImage" content="<?php echo get_stylesheet_directory_uri() ?>/img/favicons/favicon-144.png"/>
+
 	<?php wp_head(); ?>
 
 </head>
@@ -22,8 +31,13 @@
 
 <div class="layout">
 
-<header>
-	<?php if ( has_nav_menu( 'primary-menu' ) ) :
-		wp_nav_menu( array( 'container' => 'nav', 'container_class' => 'tj-header-menu', 'fallback_cb' => 'wp_page_menu', 'theme_location' => 'primary-menu' ) ); 
-	endif; ?>
-</header>
+	<header class="siteheader">
+
+		<div class="cwflogo">
+			<a href="<?php echo esc_url( home_url() ); ?>"><img src="<?php echo get_stylesheet_directory_uri() ?>/img/comb.png" alt="Covered With Fur"></a>
+		</div>
+
+		<div class="cwfnav">
+			<?php if ( has_nav_menu( 'primary-menu' ) ) wp_nav_menu( array( 'container' => 'nav', 'container_class' => 'tj-header-menu', 'fallback_cb' => 'wp_page_menu', 'theme_location' => 'primary-menu' ) ); ?>
+		</div>
+	</header>

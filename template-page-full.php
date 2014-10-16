@@ -5,7 +5,9 @@ Template Name: Page - Full Width
 ?>
 
 <?php get_header(); ?>
-	
+
+<!-- template-page-full.php -->
+
 <div id="content" class="clearfix">
 
 	<div id="primary" class="clearfix">

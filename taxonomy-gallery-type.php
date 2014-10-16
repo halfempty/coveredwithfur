@@ -1,5 +1,7 @@
 <?php get_header(); ?>
 
+<!-- taxonomy-gallery-type.php -->
+
 <div id="content" class="clearfix">
 
 	<div id="primary" class="clearfix">

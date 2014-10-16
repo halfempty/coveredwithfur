@@ -1,3 +1,5 @@
+<!-- content-none-search.php -->
+
 <article id="post-0" class="post no-results clearfix">
 
 	<div class="entry-content">		

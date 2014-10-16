@@ -1,3 +1,5 @@
+<!-- comments.php -->
+
 <div class="commentlist clearfix" id="comments">
 
 	<div class="comments-meta">

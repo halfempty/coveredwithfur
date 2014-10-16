@@ -1,3 +1,5 @@
+<!-- content-cpt-testimonials.php -->
+
 <script type="text/javascript" charset="utf-8">
 	jQuery(window).load(function() {
 		jQuery('.tj-home-testimonials-slider').flexslider({

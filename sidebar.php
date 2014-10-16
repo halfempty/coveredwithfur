@@ -1,3 +1,5 @@
+<!-- sidebar.php -->
+
 <div id="sidebar" class="clearfix">
 	
 	<div class="">

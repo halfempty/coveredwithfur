@@ -1,4 +1,6 @@
 <?php get_header(); ?>
+
+<!-- page.php -->
 	
 <div id="content" class="clearfix">
 

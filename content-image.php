@@ -1,3 +1,5 @@
+<!-- content-image.php -->
+
 <article id="post-<?php the_ID(); ?>" <?php post_class('clearfix'); ?>>
 	
 	<?php tj_image( $post->ID, 'featured-img-full' ) ?>

@@ -1,3 +1,5 @@
+<!-- content-audio.php -->
+
 <article id="post-<?php the_ID(); ?>" <?php post_class('clearfix'); ?>>
 					
 	<?php tj_audio_embed( $post->ID ); ?>

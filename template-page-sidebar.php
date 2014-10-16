@@ -5,7 +5,9 @@ Template Name: Page - Sidebar
 ?>
 
 <?php get_header(); ?>
-	
+
+<!-- template-page-sidebar.php -->
+
 <div id="content" class="clearfix">
 
 	<div id="primary" class="clearfix">

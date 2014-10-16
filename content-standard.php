@@ -1,3 +1,5 @@
+<!-- content-standard.php -->
+
 <article id="post-<?php the_ID(); ?>" <?php post_class('clearfix'); ?>>
 
 	<?php if( (function_exists('has_post_thumbnail')) && (has_post_thumbnail()) ) { ?>

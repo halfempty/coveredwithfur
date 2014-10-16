@@ -1,3 +1,5 @@
+<!-- sidebar-footer.php -->
+
 <div class="footer-widgets clearfix">
 	
 	<div class="footer-widget-left">

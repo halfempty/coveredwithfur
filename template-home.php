@@ -6,6 +6,8 @@ Template Name: Page - Home
 
 <?php get_header(); ?>
 
+<!-- template-home.php -->
+
 <?php 
 if ( of_get_option('tj_home_slideshow') == '1' ) {
 	get_template_part( 'content-cpt-slider' ); 

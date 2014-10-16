@@ -1,3 +1,5 @@
+<!-- content-none.php -->
+
 <article id="post-0" <?php post_class(''); ?>>
 
 	<div class="entry-content">		

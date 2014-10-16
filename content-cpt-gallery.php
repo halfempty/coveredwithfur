@@ -1,3 +1,5 @@
+<!-- content-cpt-gallery.php -->
+
 <div class="tj-gallery-wrapper clearfix">
 
 	<div class="tj-gallery-content">

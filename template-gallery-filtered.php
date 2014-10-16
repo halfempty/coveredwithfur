@@ -2,9 +2,10 @@
 /*
 Template Name: Page - Gallery - Filtered
 */
-?>
 
-<?php get_header(); ?>
+get_header(); ?>
+
+<!-- template-gallery-filtered.php -->
 
 <div id="content" class="gallery-paginated clearfix">
 

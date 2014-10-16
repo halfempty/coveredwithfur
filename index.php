@@ -1,5 +1,7 @@
 <?php get_header(); ?>
 
+<!-- index.php -->
+
 <div id="content" class="clearfix">
 
 	<div id="primary" class="clearfix">

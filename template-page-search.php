@@ -5,6 +5,8 @@ Template Name: Page - Search
 ?>
 
 <?php get_header(); ?>
+
+<!-- template-page-search.php -->
 	
 <div id="content" class="clearfix">
 

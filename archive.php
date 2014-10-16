@@ -1,4 +1,5 @@
 <?php get_header(); ?>
+<!-- archive.php -->
 
 <?php /* Get author data */
 	if(get_query_var('author_name')) {

@@ -1,3 +1,5 @@
+<!-- content-quote.php -->
+
 <article id="post-<?php the_ID(); ?>" <?php post_class('clearfix'); ?>>
 
 	<?php tj_post_footer_meta(); ?>

@@ -1,3 +1,5 @@
+<!-- content-cpt-slider.php -->
+
 <?php 
 $slideshow_speed = of_get_option('tj_home_slideshow_speed');
 if( empty($slideshow_speed) ) { $slideshow_speed = '600'; }

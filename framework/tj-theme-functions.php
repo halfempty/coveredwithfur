@@ -349,12 +349,6 @@ if ( !function_exists( 'tj_remove_more_anchor' ) ) {
 /*-----------------------------------------------------------------------------------*/
 
 function tj_custom_ico() {
-	if ( of_get_option('iphone_ico_uploader') != '') {
-	echo '<link rel="apple-touch-icon-precomposed" href="' . of_get_option('iphone_ico_uploader') . '" />'."\n";
-	}
-	else { ?>
-	<link rel="apple-touch-icon-precomposed" href="<?php echo get_stylesheet_directory_uri() ?>/img/apple-touch-icon.png" />
-	<?php }
 }
 
 add_action('wp_head', 'tj_custom_ico');

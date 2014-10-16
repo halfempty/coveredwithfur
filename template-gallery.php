@@ -6,6 +6,8 @@ Template Name: Page - Gallery
 
 <?php get_header(); ?>
 
+<!-- template-gallery.php -->
+
 <div id="content" class="clearfix">
 
 	<div id="primary" class="clearfix">

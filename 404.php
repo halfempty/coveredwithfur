@@ -1,4 +1,5 @@
 <?php get_header(); ?>
+<!-- 404.php -->
 
 <div id="content" class="clearfix">
 

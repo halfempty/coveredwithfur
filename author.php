@@ -1,4 +1,5 @@
 <?php get_header(); ?>
+<!-- author.php -->
 
 <div id="content" class="clearfix">
 
