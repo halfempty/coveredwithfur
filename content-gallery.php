@@ -2,9 +2,22 @@
 
 <article id="post-<?php the_ID(); ?>" <?php post_class('clearfix'); ?>>
 
-	<div class="tj-gallery-blog">
-		<?php tj_gallery( $post->ID, 'featured-img-full' ); ?>
-	</div>
+	<?php 
+
+	$images = get_field('gallery');
+
+	if( $images ): ?>
+	    <div id="slider" class="flexslider">
+	        <ul class="slides">
+	            <?php foreach( $images as $image ): ?>
+	                <li>
+	                    <img src="<?php echo $image['url']; ?>" alt="<?php echo $image['alt']; ?>" />
+	                    <p><?php echo $image['caption']; ?></p>
+	                </li>
+	            <?php endforeach; ?>
+	        </ul>
+	    </div>
+	<?php endif; ?>
 	
 	<?php tj_post_footer_meta(); ?>
 				

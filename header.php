@@ -29,6 +29,15 @@
 
 <body <?php body_class(); ?>>
 
+	<div class="searchbox" style="display: none;">
+		<form method="get" id="searchform" action="<?php echo get_search_link(); ?>">
+			<div class="inputmargin">
+				<input type="search" name="s" id="s" onfocus="if(this.value == 'Search...') { this.value = ''; }" onblur="if(this.value == '') { this.value = 'Search...'; }" value="Search...">
+			</div>
+		</form>
+	</div>
+
+
 <div class="layout">
 
 	<header class="siteheader">

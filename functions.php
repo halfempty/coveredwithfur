@@ -4,14 +4,7 @@ if ( ! isset( $content_width ) ) $content_width = 1120;
 
 if ( !function_exists( 'themejug_theme_setup' ) ) {
 	function themejug_theme_setup(){
-	    
-	    // Theme Translations
-	    load_theme_textdomain('framework', TEMPLATEPATH . '/languages');
-	    $locale = get_locale();
-	    $locale_file = TEMPLATEPATH . "/languages/$locale.php";
-	    if ( is_readable( $locale_file ) )
-	    	require_once( $locale_file );
-	    	
+
 	    // Feed Links
 	    add_theme_support( 'automatic-feed-links' );
 	    
@@ -101,11 +94,16 @@ function cwf_enqueue_scripts() {
 
 	/* Flexslider */
    	
-	wp_enqueue_style( 'flexslider' );
-	wp_register_style( 'flexslider', get_template_directory_uri() . '/css/flexslider.css', array(), '', 'all' );
 
-   	wp_enqueue_script('flexslider');
-	wp_register_script('flexslider', get_template_directory_uri().'/js/jquery.flexslider-min.js', 'jquery', '2.1', TRUE);
+	wp_register_style( 'flexslidercss', get_template_directory_uri() . '/css/flexslider.css', array(), '', 'all' );
+	wp_enqueue_style( 'flexslidercss' );
+
+	wp_register_script('flexsliderjs', get_template_directory_uri().'/js/jquery.flexslider-min.js', 'jquery', '2.1', TRUE);
+   	wp_enqueue_script('flexsliderjs');
+
+	// CWF
+	wp_register_script('cwfjs', get_template_directory_uri().'/js/cwf.js', 'jquery', '2.1', TRUE);
+   	wp_enqueue_script('cwfjs');
 
 }
 
@@ -157,42 +155,6 @@ if ( !function_exists( 'tj_media_content_width' ) ) {
 }
 add_action( 'template_redirect', 'tj_media_content_width' );
 
-/*-----------------------------------------------------------------------------------*/
-/*	Register Widget Areas
-/*-----------------------------------------------------------------------------------*/
-
-function tj_widgets_init() {
-	register_sidebar( array(
-		'name'          => __( 'Footer Left', 'framework' ),
-		'id'            => 'sidebar-1',
-		'description'   => __( '', 'framework' ),
-		'before_widget' => '<div id="%1$s" class="widget %2$s">',
-		'after_widget'  => '</div>',
-		'before_title'  => '<h3 class="widget-title">',
-		'after_title'   => '</h3>',
-	) );
-
-	register_sidebar( array(
-		'name'          => __( 'Footer Right', 'framework' ),
-		'id'            => 'sidebar-2',
-		'description'   => __( '', 'framework' ),
-		'before_widget' => '<div id="%1$s" class="widget %2$s">',
-		'after_widget'  => '</div>',
-		'before_title'  => '<h3 class="widget-title">',
-		'after_title'   => '</h3>',
-	) );
-	
-	register_sidebar( array(
-		'name'          => __( 'Page Sidebar', 'framework' ),
-		'id'            => 'sidebar-3',
-		'description'   => __( '', 'framework' ),
-		'before_widget' => '<div id="%1$s" class="widget %2$s">',
-		'after_widget'  => '</div>',
-		'before_title'  => '<h3 class="widget-title">',
-		'after_title'   => '</h3>',
-	) );
-}
-add_action( 'widgets_init', 'tj_widgets_init' );
 
 /*-----------------------------------------------------------------------------------*/
 /*	Change Default Excerpt Length

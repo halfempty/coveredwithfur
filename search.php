@@ -5,14 +5,12 @@
 <div id="content" class="clearfix">
 
 	<div id="primary" class="clearfix">
-		
+
+		<article id="post-<?php the_ID(); ?>" <?php post_class('clearfix'); ?>>
+
 		<?php if (have_posts()) : while (have_posts()) : the_post(); ?>
-						
-			<?php 
-			$format = get_post_format();
-			if( false === $format ) { $format = 'standard'; }
-			get_template_part( 'content', $format ); 
-			?>
+
+			<h3><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h3>
 
 		<?php endwhile; ?>
 						
@@ -21,7 +19,9 @@
 			<?php get_template_part( 'content', 'none-search' ); ?>
 
 		<?php endif; ?>
-			
+
+		</article>
+
 	</div>
 
 </div>

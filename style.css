@@ -672,75 +672,15 @@ p.tj-posts-widget-post-date { margin: 7px 0; }
 .tj_flickr_widget .flickrwidget .flickr_badge_image { float: left; width: 75px; height: 75px; overflow: hidden; margin: 0 18px 18px 0; }
 .tj_flickr_widget .flickrwidget .flickr_badge_image img:hover { opacity: 0.9; }
 
-.widget_tag_cloud { display: block; clear: both; }
-
-.tagcloud { margin: 8px 0 0 0; padding: 0 0 8px 0; display: block; clear: both; }
-
-.tagcloud:after { content: " "; display: block; height: 0; clear: both; visibility: hidden; }
-
-#sidebar .widget_tag_cloud .tagcloud a { font-size: 12px!important; line-height: 12px; margin: 0 6px 6px 0; padding: 6px 6px; display: inline-block; float: left; background: #5DC2A6; font-weight: bold; color: #fff; -webkit-border-radius: 3px; -moz-border-radius: 3px; border-radius: 3px; -webkit-transition: 0.3s all ease-in-out; -moz-transition: 0.3s all ease-in-out; -o-transition: 0.3s all ease-in-out; transition: 0.3s all ease-in-out; }
-
-#sidebar .widget_tag_cloud .tagcloud a:hover { background: #ecf0f1; color: #7f8c8d; }
-
-#sidebar .widget_recent_comments li { position: relative; margin: 0 0 25px 0; padding: 10px 15px; background: #ecf0f1; line-height: 24px; -webkit-border-radius: 3px; -moz-border-radius: 3px; border-radius: 3px; }
-
-#sidebar .widget_recent_comments li:last-child { margin-bottom: 15px; }
-
-#sidebar .widget_recent_comments ul li a { color: #7f8c8d; }
-
-#sidebar .widget_recent_comments ul li a:hover { color: #5DC2A6; }
-
-#sidebar .widget_recent_comments li:after { position: absolute; top: 100%; left: 5%; content: ''; width: 0; height: 0; border-top: solid 10px #ecf0f1; border-left: solid 10px transparent; border-right: solid 10px transparent; z-index: 9999; }
-#sidebar .widget_recent_comments li::after { position: absolute; top: 100%; left: 5%; content: ''; width: 0; height: 0; border-top: solid 10px #ecf0f1; border-left: solid 10px transparent; border-right: solid 10px transparent; z-index: 9999; }
-
 #sidebar a.twitter_time { font-weight: normal; }
 
-#screen > footer .HSC { height:2em; margin-bottom:0; border-top: 1px solid #000000 }
 #screen > header .HSC { height:2em; margin-bottom:0; border-top: 1px solid #000000 }
 
-#screen > footer ul { margin-bottom:0 !important; border-top: 1px solid #000000 }
 #screen > header h1 { margin-bottom:0 !important; border-top: 1px solid #000000 }
 #screen > header ul { margin-bottom:0 !important; border-top: 1px solid #000000 }
 
-#screen > footer li li { font-size:87.5%; letter-spacing:0; line-height:1.5em; text-transform:none }
 #screen > header li li { font-size:87.5%; letter-spacing:0; line-height:1.5em; text-transform:none }
 
-#screen > footer { clear:both }
-
-#screen > footer > nav > ul { background:transparent 0 0 repeat-x; margin-top:1.0em; padding-top:1.0em }
-
-#screen > footer > nav > ul strong a { font-weight:400 }
-
-#footerOne { margin-top:2.5em; border-bottom: 1px solid #000000; }
-#footerOne > li ul li p { margin-top: 1.125em!important; border-bottom: 1px solid #000000; }
-
-#footerTwo li { font-size:40%; float:left; letter-spacing:.1em; line-height:2em; margin:0 .75em 0 0; text-transform:uppercase }
-
-#footerTwo li:last-child { float:right; letter-spacing:0; margin:0 0 0 .75em; text-transform:none }
-
-.ielt9 #footerTwo li.lastChild { float:right; letter-spacing:0; margin:0 0 0 .75em; text-transform:none }
-
-#screen > footer #footerTwo li a { color:#000 !important; text-decoration:none }
-
-#footerTwo li a:hover { text-decoration:underline }
-
-#footerOne > li { float:left; margin-bottom:0; width:25% }
-
-#footerOne > li:nth-child(1) { display:none; width:100% }
-
-#footerTwo > :last-child { float:left !important; margin-left:0 !important; margin-top:0 !important }
-#footerOne > li { width:50% }
-
-#footerOne > li:nth-child(1) { display:block }
-
-#footerOne li { font-size:93.75% !important; line-height:1.6em; margin-bottom:0 }
-#footerTwo li:last-child { font-size:93.75% !important; line-height:1.6em; margin-bottom:0 }
-
-#footerOne > li:nth-child(1) { margin-bottom:1.5em }
-#footerOne > li:nth-child(2) { margin-bottom:1.5em }
-#footerOne > li:nth-child(3) { margin-bottom:1.5em }
-
-#footerTwo li { font-size:87.5% !important; }
 
 .tj-column { font-size: 1.25em!important; line-height: 36px!important; margin-top: 20px!important; margin-bottom: 20px!important; }
 
@@ -950,35 +890,85 @@ a.tj-mobile-menu { background-color: #2e2d2d; color: #fff; }
 
 /* Marty's */
 
-
-.layout { border: solid .55em #202020; padding: 48px; }
+a { color: #CC0000; }
+a:hover { color: #ccc; }
 
 span.dropcaps { font-family: "Raleway", serif; color: #ccc; font-size: 75px; float: left; font-weight: 100; line-height: 1em; margin-bottom: 0em; margin-right: 0.09em; position: relative; }
 
 body .ig-shortcode-tabpane { overflow: hidden; }
 
-.siteheader { max-width: 942px; margin: 46px auto; padding-bottom: 72px; border-bottom: 1px solid #b3b3b3; overflow: hidden; }
+.siteheader { max-width: 942px; margin: auto; padding-bottom: 20px; border-bottom: 1px solid #b3b3b3; overflow: hidden; }
 
-.cwflogo { width: 50%; float: left; }
+.cwflogo { padding-bottom: 20px; }
 .cwflogo img { max-width: 82%; }
 
-.cwfnav { width: 50%; float: left; font-size: 12px; }
+.cwfnav { font-size: 12px; }
 .cwfnav a { color: #000; }
 .cwfnav a span { color: #CC0000;  }
 
 .cwfnav ul { line-height: 2; letter-spacing: 0.1em; }
-.cwfnav ul li { width: 33.3333333333%; display: block; float: left; }
+.cwfnav ul li { display: block; width: 33.3333333333%; float: left; }
 .cwfnav ul li ul { font-family: "nimbus-sans",sans-serif; letter-spacing: 0.05em; line-height: 1.8; }
 .cwfnav ul li ul li { width: 100%; float: none; }
 .cwfnav ul li ul li a { color: #CC0000; }
 .cwfnav ul li ul li a:hover { color: #ccc; }
 
 .asofooter { clear: both; max-width: 942px; margin: auto; color: #000; }
-.asofooterinner { border-bottom: 1px solid #b3b3b3; border-top: 1px solid #b3b3b3; overflow: auto; }
-.asologo { width: 32.1656050955%; float: left; }
-.asologo a { padding: 10px 78px 10px 34px; display: block; }
-.asologo img { width: 100%; }
-
-.asofooter .mailinglist { width: 32.1656050955%; float: right; }
-
+.asofooterinner { border-bottom: 1px solid #b3b3b3; border-top: 1px solid #b3b3b3; overflow: auto; text-transform: uppercase; }
+.asofooter label { display: block; }
 .asofooter p { text-align: right; margin: .75em 0; font-size: 75%; line-height: 2; }
+
+.asologo { text-align: center;}
+.asologo a { padding: 20px 0; display: block; }
+.asologo img { max-width: 191px; }
+
+.asofooter .mailinglist {  font-size: 12px; letter-spacing: .1em; line-height: 2; padding: 17px 0; text-align: center; }
+
+#mce-EMAIL { background: #FFF; border: solid 1px #dfdfdf; font-size: 11px; line-height: 11.1999998092651px; padding: 8px 7px; width: 14.875em; font-family: Georgia, serif; text-align: left; font-style: italic; font-weight: normal; }
+#mc-embedded-subscribe { background: #f1f1f1; color: #202020; cursor: pointer; font-size: 11px; font-weight: normal; font-family: Georgia ,serif; padding: 8px 7px; border: .1em solid #f1f1f1; }
+
+.asofooter .social { text-align: center; font-size: 12px; letter-spacing: .1em; line-height: 2; padding: 17px 0; } 
+
+.searchbox { background: #202020; color: #fff; }
+.searchbox form { overflow: hidden; }
+.searchbox #s { font-family: "Raleway", arial, sans-serif; display: block; background: #202020; color: #fff; -webkit-font-smoothing: antialiased; text-rendering: optimizeLegibility; font-size: 24px; padding: 5px 0 0 0; margin: auto; width: 100%; border: none; border-top: 1px solid #4c4c4c; }
+
+.inputmargin { margin: auto; padding: 16px 20px 20px 20px; max-width: 942px;}
+
+@media screen and (min-width: 600px) {
+	.layout {padding: 24px; }
+	.siteheader { margin: 24px auto; padding-bottom: 48px; }	
+
+	.asologo a { padding: 15px 0; }
+	.asofooter .mailinglist { width: 50%; float: right;  }
+	.asofooter .social { width: 50%; float: right; }
+
+	.inputmargin { padding: 16px 24px 20px 24px; }
+
+}
+
+
+@media screen and (min-width: 700px) {
+
+	.layout {padding: 48px; }
+	.siteheader { margin: 46px auto; padding-bottom: 72px; }
+
+	.asologo a { padding: 10px 0; }
+	.cwflogo { width: 50%; float: left; padding-bottom: 0; }
+	.cwfnav { width: 50%; float: left; }
+
+	.inputmargin { padding: 16px 48px 25px 48px; }
+
+}
+
+
+@media screen and (min-width: 900px) {
+	
+.asologo { width: 32.1656050955%; float: left;  }	
+.asologo a { padding: 10px 0 10px 34px; }
+
+
+.asofooter .mailinglist { width: 32.1656050955%; float: right; text-align: left; }
+.asofooter .social { width: 32.1656050955%; margin: auto; }
+}
+	
