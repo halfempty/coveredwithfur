@@ -57,12 +57,11 @@ th { margin: 0; padding: 0; border: 0; outline: 0; font-size: 100%; }
 td { margin: 0; padding: 0; border: 0; outline: 0; font-size: 100%; }
 
 h1 { font-size: 1.5em; line-height: 1.33em; margin: 1.33em 0 0 0; font-weight: 500; color: #474747; font-family:"Raleway", arial, sans-serif;}
-h2 { font-size: 1.375em; line-height: 1.4545em; margin: 1.4545em 0 0 0; font-weight: 500; color: #474747; font-family:"Raleway", arial, sans-serif;}
+h2 { font-size: 1.375em; line-height: 1.4545em; margin: 1.4545em 0 0 0; font-weight: 500; font-family:"Raleway", arial, sans-serif;}
 h3 { font-size: 1.25em; line-height: 1.6em; margin: 1.6em 0 0 0; font-weight: 500; color: #474747; font-family:"Raleway", arial, sans-serif;}
 h4 { font-size: 1.125em; line-height: 1.7778em; margin: 1.5em 0; font-weight: 500; color: #474747; font-family:"Raleway", arial, sans-serif;}
 h5 { font-size: 1em; line-height: 2em; margin: 1.5em 0 0 0; font-weight: 500; color: #474747; font-family:"Raleway", arial, sans-serif;}
 h6 { font-size: 0.875em; line-height: 2.2857em; margin: 1.6923em 0 0 0; font-weight: 500; color: #474747; font-family:"Raleway", arial, sans-serif;}
-
 
 pre { border: 0; outline: 0; margin: 1.5em auto; padding: 1.5em 1.5em; background: #fff; font-size: 0.875em; }
 
@@ -358,7 +357,6 @@ h3#reply-title { margin: 0 0 40px 0; }
 
 .search.search-results.tj-fixed-header-disabled #primary article.type-gallery:first-of-type { margin-top: 70px; }
 
-.page-template-template-page-full-php article.page .entry-content { max-width: 942px; margin: 0 auto 60px auto; padding: 0 0 80px 0; clear: both; }
 
 .page-template-template-contact-php article.page .entry-content { max-width: 942px; margin: 0 auto; padding: 0 0 80px 0; }
 
@@ -893,9 +891,7 @@ a.tj-mobile-menu { background-color: #2e2d2d; color: #fff; }
 a { color: #CC0000; }
 a:hover { color: #ccc; }
 
-span.dropcaps { font-family: "Raleway", serif; color: #ccc; font-size: 75px; float: left; font-weight: 100; line-height: 1em; margin-bottom: 0em; margin-right: 0.09em; position: relative; }
-
-body .ig-shortcode-tabpane { overflow: hidden; }
+.layout {padding: 24px; border: solid .55em #202020; }
 
 .siteheader { max-width: 942px; margin: auto; padding-bottom: 20px; border-bottom: 1px solid #b3b3b3; overflow: hidden; }
 
@@ -932,18 +928,39 @@ body .ig-shortcode-tabpane { overflow: hidden; }
 .searchbox { background: #202020; color: #fff; }
 .searchbox form { overflow: hidden; }
 .searchbox #s { font-family: "Raleway", arial, sans-serif; display: block; background: #202020; color: #fff; -webkit-font-smoothing: antialiased; text-rendering: optimizeLegibility; font-size: 24px; padding: 5px 0 0 0; margin: auto; width: 100%; border: none; border-top: 1px solid #4c4c4c; }
-
 .inputmargin { margin: auto; padding: 16px 20px 20px 20px; max-width: 942px;}
 
+.cwfflag { text-transform: uppercase; color: #fff; float: left;  margin:0; line-height: 1; padding: .5em 4em .5em .5em; font-size: 18px; background: url('img/flagtick.svg') no-repeat right center; }
+.drawingflag { background-color: #0A4384; }
+.essayflag { background-color: #18493F; }
+.fictionflag { background-color: #CC0000; }
+.microessayflag { background-color: #F1C40F; }
+.slashflag { background-color: #808080; }
+
+.cwfstory { max-width: 942px; margin: 0 auto 60px auto; padding: 0 0 80px 0; clear: both; }
+.cwfstory header { text-align: center; margin: 0 0 70px 0; font-family: "Raleway", arial, sans-serif; font-weight: 500;}
+.cwfstory h2 { font-size: 48px; margin: 0; padding-top: 60px; clear: both; line-height: 1.1; }
+.cwfstory .byline { font-size: 36px; line-height: 2; margin: 0; }
+
+.cwfstory .entry-content { max-width: 628px; margin: auto; line-height: 1.1; }
+
+.pullquote, .pullright { color: #CC0000; text-transform: uppercase; border-top: 1px solid #B3B3B3; border-bottom: 1px solid #B3B3B3; font-family: "Raleway", arial, sans-serif; font-weight: 300; font-size: 24px; line-height: 1.2; padding: .5em 0; margin: 1em 0; }
+
+.dropcaps { font-family: "Raleway", serif; color: #ccc; font-size: 75px; float: left; font-weight: 100; line-height: 1em; margin-right: 0.09em; }
+
+
 @media screen and (min-width: 600px) {
-	.layout {padding: 24px; }
-	.siteheader { margin: 24px auto; padding-bottom: 48px; }	
+
+	.siteheader { margin: 24px auto 0 auto; padding-bottom: 48px;  }	
 
 	.asologo a { padding: 15px 0; }
-	.asofooter .mailinglist { width: 50%; float: right;  }
+	.asofooter .mailinglist { width: 50%; float: right; }
 	.asofooter .social { width: 50%; float: right; }
 
 	.inputmargin { padding: 16px 24px 20px 24px; }
+
+	.pullquote { font-size: 36px; font-weight: 200; }
+	.pullright { text-transform: none; line-height: 1.3; margin: 0 0 .5em 1em; float: right; max-width: 211px; }
 
 }
 
@@ -951,24 +968,24 @@ body .ig-shortcode-tabpane { overflow: hidden; }
 @media screen and (min-width: 700px) {
 
 	.layout {padding: 48px; }
-	.siteheader { margin: 46px auto; padding-bottom: 72px; }
+	.siteheader { margin: 46px auto 0 auto; padding-bottom: 72px; }
 
 	.asologo a { padding: 10px 0; }
 	.cwflogo { width: 50%; float: left; padding-bottom: 0; }
 	.cwfnav { width: 50%; float: left; }
 
-	.inputmargin { padding: 16px 48px 25px 48px; }
+	.inputmargin { padding: 16px 48px 20px 48px; }
 
 }
 
 
 @media screen and (min-width: 900px) {
 	
-.asologo { width: 32.1656050955%; float: left;  }	
-.asologo a { padding: 10px 0 10px 34px; }
+	.asologo { width: 32.1656050955%; float: left;  }	
+	.asologo a { padding: 10px 0 10px 34px; }
 
+	.asofooter .mailinglist { width: 32.1656050955%; float: right; text-align: left; }
+	.asofooter .social { width: 32.1656050955%; margin: auto; }
 
-.asofooter .mailinglist { width: 32.1656050955%; float: right; text-align: left; }
-.asofooter .social { width: 32.1656050955%; margin: auto; }
 }
 	

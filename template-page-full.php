@@ -8,36 +8,46 @@ Template Name: Page - Full Width
 
 <!-- template-page-full.php -->
 
-<div id="content" class="clearfix">
+<?php if (have_posts()) : while (have_posts()) : the_post(); ?>
 
-	<div id="primary" class="clearfix">
-		
-	<?php if (have_posts()) : while (have_posts()) : the_post(); ?>
+	<article class="cwfstory">
+
+		<header>
+
+			<?php 
+			
+				$genreflag = get_field('genre_flag'); 
+				if ( $genreflag == 'fiction' ) get_template_part('parts/flag-fiction');
+				if ( $genreflag == 'essay' ) get_template_part('parts/flag-essay');
+				if ( $genreflag == 'microessay' ) get_template_part('parts/flag-microessay');
+				if ( $genreflag == 'drawing' ) get_template_part('parts/flag-drawing');
+				if ( $genreflag == 'slash' ) get_template_part('parts/flag-slash');
+
+			?>
+
+			<h2><?php 
+				if ( get_field('cwf_title') ) : 
+					the_field('cwf_title');
+				else :
+					the_title(); 
+				endif; ?></h2>
+
+			<?php if ( get_field('cwf_byline') ) : ?>
+				<p class="byline"><?php the_field('cwf_byline'); ?></p>
+			<?php endif; ?>
+
+		</header>
 	
-		<article id="page-<?php the_ID(); ?>" <?php post_class('tj-full-width-page clearfix'); ?>>
-		
-			<?php if( (function_exists('has_post_thumbnail')) && (has_post_thumbnail()) ) { ?>
-			<div class="page-hero">
-			
-				<a title="<?php printf(__('Permanent Link to %s', 'framework'), get_the_title()); ?>" href="<?php the_permalink(); ?>"><?php the_post_thumbnail('featured-img-full'); ?></a>
-			
-			</div>
-			<?php } ?>
-													
-			<div class="entry-content">
-			
-				<h2 class="entry-title"><?php the_title(); ?></h2>
-				
-				<?php the_content(); ?>
-								
-			</div>
-			
-		</article>
-		
-	<?php endwhile; endif; ?>
+		<?php if ( has_post_thumbnail() ) : ?>
+			<?php the_post_thumbnail('featured-img-full'); ?>
+		<?php endif; ?>
+
+		<div class="entry-content">
+			<?php the_content(); ?>
+		</div>
+
+	</article>
 	
-	</div>
-			
-</div>
-			
+<?php endwhile; endif; ?>
+
 <?php get_footer(); ?>
