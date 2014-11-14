@@ -10,14 +10,9 @@ if ( !function_exists( 'themejug_theme_setup' ) ) {
 	    
 	    // WP Menus
 	    register_nav_menu('primary-menu', __('Primary Menu', 'framework'));
-	    
-	    // Post Formats
-		add_theme_support( 'post-formats', array(
-			'audio', 'gallery', 'image', 'link', 'quote', 'video'
-		) );
-	    
+
 	    // WP Thumbnails
-	    add_theme_support( 'post-thumbnails', array( 'post', 'page', 'gallery', 'slider' )  );
+//	    add_theme_support( 'post-thumbnails', array( 'post', 'page', 'gallery', 'slider' )  );
 	    set_post_thumbnail_size( 1120, 350, true ); // Thumbnails
 	    add_image_size( 'featured-img', 1120, 690, true); // Featured image - cropped
 	    add_image_size( 'featured-img-full', 1120, '', false); // Featured image - fullwidth
@@ -77,20 +72,8 @@ function cwf_enqueue_scripts() {
 
 	wp_register_script('jquery-ui', get_template_directory_uri() . '/js/jquery.ui.custom.min.js', 'jquery', '1.10.3', TRUE);
    	wp_enqueue_script('jquery-ui');
-   	
-   	if ( is_page_template( 'template-contact.php' ) ) {
-		wp_register_script('validation', 'http://ajax.microsoft.com/ajax/jquery.validate/1.7/jquery.validate.min.js', 'jquery');
-   	    wp_enqueue_script('validation');
-   	}
-   	
-   	if( is_page_template( 'template-gallery-filtered.php' ) ) {
-       	wp_register_script('isotope', get_template_directory_uri() . '/js/jquery.isotope.min.js', 'jquery', '1.5.03', TRUE);
-   	    wp_enqueue_script('isotope');
-   	}
 
 	/* Flexslider */
-   	
-
 	wp_register_style( 'flexslidercss', get_template_directory_uri() . '/css/flexslider.css', array(), '', 'all' );
 	wp_enqueue_style( 'flexslidercss' );
 
@@ -106,80 +89,6 @@ function cwf_enqueue_scripts() {
 add_action('wp_print_styles', 'cwf_enqueue_scripts');
 
 
-function cwf_dequeue_plugin_scripts() { 
-
-	// JS
-	// wp_dequeue_script('tribe-events-pro');
-
-	// CSS
-	wp_dequeue_style( 'ig_shortcodes_fontawesome' );
-	wp_dequeue_style( 'ig_shortcodes_fontello' );
-//	wp_dequeue_style( 'ig_shortcodes' );
-	wp_dequeue_style( 'ig_genericons' );
-	wp_dequeue_style( 'tj-sc-fontawesome' );
-	wp_dequeue_style( 'tj-sc-fontawesomeie7' );
-
-}
-add_action('wp_print_styles', 'cwf_dequeue_plugin_scripts');
-
-
-
-/*-----------------------------------------------------------------------------------*/
-/*	Post Format: Gallery Image Size
-/*-----------------------------------------------------------------------------------*/
-
-if ( !function_exists( 'tj_gallery_atts' ) ) {
-	function tj_gallery_atts( $atts ) {
-		if ( has_post_format( 'gallery' ) && ! is_single() )
-			$atts['size'] = wp_is_mobile() ? 'thumbnail' : 'large';
-	
-		return $atts;
-	}
-}
-add_filter( 'shortcode_atts_gallery', 'tj_gallery_atts' );
-
-/*-----------------------------------------------------------------------------------*/
-/*	Post Format: Video Size
-/*-----------------------------------------------------------------------------------*/
-
-if ( !function_exists( 'tj_media_content_width' ) ) {
-	function tj_media_content_width() {
-		if ( has_post_format( 'video' ) || has_post_format( 'audio' ) || is_attachment() ) {
-			global $content_width;
-			$content_width = 1120;
-		}
-	}
-}
-add_action( 'template_redirect', 'tj_media_content_width' );
-
-
-/*-----------------------------------------------------------------------------------*/
-/*	Change Default Excerpt Length
-/*-----------------------------------------------------------------------------------*/
-
-if( !function_exists( 'tj_excerpt_length' ) ) {
-    function tj_excerpt_length( $length ) {
-   		return 35; 
-    }
-}
-add_filter('excerpt_length', 'tj_excerpt_length', 999);
-
-/*-----------------------------------------------------------------------------------*/
-/* Validate For Contact Form 
-/*-----------------------------------------------------------------------------------*/
-
-if( !function_exists( 'tj_contact_validate' ) ) {
-    function tj_contact_validate() {
-    	if (is_page_template('template-contact.php') ) { ?>
-    		<script type="text/javascript">
-    			jQuery(document).ready(function(){
-    				jQuery("#contact").validate();
-    			});
-    		</script>
-    	<?php }
-    }
-}
-add_action('wp_head', 'tj_contact_validate');
 
 /*-----------------------------------------------------------------------------------*/
 /*	Register and load admin javascript

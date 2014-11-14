@@ -1,26 +1,17 @@
 <?php get_header(); ?>
+
 <!-- 404.php -->
 
-<div id="content" class="clearfix">
+	<article class="cwfstory">
 
-	<div id="primary" class="clearfix">
+		<header>
 
-		<article id="post-0" class="first clearfix">		
-		
-			<div class="entry-content">				
-				
-				<h2 class="entry-title"><?php _e('You hit a 404!', 'framework') ?></h2>
-				
-				<p><?php _e( 'Woops, you are looking for something that does exist.', 'framework' ); ?></p>
-				
-			</div>
+			<h2>404 &mdash; Page not found</h2>
+
+		</header>
 	
-		</article>
+		<img src="<?php echo get_stylesheet_directory_uri() ?>/img/cat.jpg" alt="The Covered w/ Fur Mascot">
+	</article>
 	
-	</div>
-	
-	<?php get_sidebar(); ?>
-		
-</div>
-			
+
 <?php get_footer(); ?>

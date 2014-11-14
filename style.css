@@ -1,12 +1,9 @@
 /*
-Theme Name: Carajillo	
-Theme URI: http://www.themejug.com/theme/carajillo
-Author: ThemeJug	
-Author URI: http://www.ThemeJug.com	
-License: GNU General Public License v2 or later
-License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
-Version: 1.0.6
+Theme Name: Covered w/ Fur	
+Theme URI: https://github.com/halfempty/coveredwithfur
+Author: Marty Spellerberg
+Author URI: http://martyspellerberg.com/
 
 */
 
@@ -134,11 +131,6 @@ article.post { max-width: 942px; margin: 0 auto 60px auto; padding: 0 0 30px 0; 
 
 #primary article.post:first-of-type { margin-top: 133px; }
 #primary article.post:last-of-type { margin-bottom: 0; border-bottom: none; }
-
-.blog .entry-content { width: 100%; max-width: 820px; float: right; }
-.single .entry-content { width: 100%; max-width: 820px; float: right; }
-.archive .entry-content { width: 100%; max-width: 820px; float: right; }
-.search .entry-content { width: 100%; max-width: 820px; float: right; }
 
 .entry-content a { text-decoration: underline; color: #dd3333; }
 
@@ -935,6 +927,7 @@ a:hover { color: #ccc; }
 .essayflag { background-color: #18493F; }
 .fictionflag { background-color: #CC0000; }
 .microessayflag { background-color: #F1C40F; }
+.photoessayflag { background-color: #593866; }
 .slashflag { background-color: #808080; }
 
 .cwfstory { max-width: 942px; margin: 0 auto 60px auto; padding: 0 0 80px 0; clear: both; }
