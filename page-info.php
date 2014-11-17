@@ -18,10 +18,6 @@ Template Name: Info Template
 
 		</header>
 	
-		<?php if ( has_post_thumbnail() ) : ?>
-			<?php the_post_thumbnail('featured-img-full'); ?>
-		<?php endif; ?>
-
 		<div class="entry-content">
 			<?php the_content(); ?>
 		</div>

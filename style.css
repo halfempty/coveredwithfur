@@ -846,14 +846,6 @@ a.tj-mobile-menu { background-color: #2e2d2d; color: #fff; }
 
 .page-template-template-home-php .tj-home-slider .slides li { height: 800px; }
 
-@media only screen and (max-width: 750px) {
-	.page-template-template-home-php .tj-home-slider .slides li { height: 400px; }
-} 
-
-@media screen and (min-width: 751px) and (max-width: 970px) {
-	.page-template-template-home-php .tj-home-slider .slides li { height: 533.33333333333px; }
-}
-
 .single-gallery-hero { min-height: 600px; }
 
 @media only screen and (max-width: 750px) {
@@ -935,12 +927,13 @@ a:hover { color: #ccc; }
 .cwfstory h2 { font-size: 48px; margin: 0; padding-top: 60px; clear: both; line-height: 1.1; }
 .cwfstory .byline { font-size: 36px; line-height: 2; margin: 0; }
 
-.cwfstory .entry-content { max-width: 628px; margin: auto; line-height: 1.1; }
+.cwfstory .entry-content { max-width: 100%; margin: auto; line-height: 1.1; }
 
 .pullquote, .pullright { color: #CC0000; text-transform: uppercase; border-top: 1px solid #B3B3B3; border-bottom: 1px solid #B3B3B3; font-family: "Raleway", arial, sans-serif; font-weight: 300; font-size: 24px; line-height: 1.2; padding: .5em 0; margin: 1em 0; }
 
 .dropcaps { font-family: "Raleway", serif; color: #ccc; font-size: 75px; float: left; font-weight: 100; line-height: 1em; margin-right: 0.09em; }
 
+.searchresults header { border-top: 1px solid #b3b3b3; }
 
 @media screen and (min-width: 600px) {
 
@@ -951,6 +944,8 @@ a:hover { color: #ccc; }
 	.asofooter .social { width: 50%; float: right; }
 
 	.inputmargin { padding: 16px 24px 20px 24px; }
+
+
 
 	.pullquote { font-size: 36px; font-weight: 200; }
 	.pullright { text-transform: none; line-height: 1.3; margin: 0 0 .5em 1em; float: right; max-width: 211px; }
@@ -979,6 +974,9 @@ a:hover { color: #ccc; }
 
 	.asofooter .mailinglist { width: 32.1656050955%; float: right; text-align: left; }
 	.asofooter .social { width: 32.1656050955%; margin: auto; }
+
+	.cwfstory .entry-content { max-width: 66.6666666667%; }
+	.pullquote { width: 150%; margin-left: -25%; }
 
 }
 	

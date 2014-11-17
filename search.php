@@ -2,28 +2,57 @@
 
 <!-- search.php -->
 
-<div id="content" class="clearfix">
+<article class="cwfstory searchresults">
 
-	<div id="primary" class="clearfix">
+	<p><strong>Search results for <em>&ldquo;<?php printf( __( '%s'), get_search_query() ); ?>&rdquo;</em></strong></p>
 
-		<article id="post-<?php the_ID(); ?>" <?php post_class('clearfix'); ?>>
 
-		<?php if (have_posts()) : while (have_posts()) : the_post(); ?>
+<?php if (have_posts()) : ?>
+	
+	<?php while (have_posts()) : the_post(); ?>
 
-			<h3><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h3>
+			<header>
 
-		<?php endwhile; ?>
-						
-		<?php else : ?>
-		
-			<?php get_template_part( 'content', 'none-search' ); ?>
+				<?php 
 
-		<?php endif; ?>
+					$genreflag = get_field('genre_flag'); 
+					if ( $genreflag == 'fiction' ) get_template_part('parts/flag-fiction');
+					if ( $genreflag == 'essay' ) get_template_part('parts/flag-essay');
+					if ( $genreflag == 'microessay' ) get_template_part('parts/flag-microessay');
+					if ( $genreflag == 'photoessay' ) get_template_part('parts/flag-photoessay');
+					if ( $genreflag == 'drawing' ) get_template_part('parts/flag-drawing');
+					if ( $genreflag == 'slash' ) get_template_part('parts/flag-slash');
 
-		</article>
+				?>
 
-	</div>
+				<h2><a href="<?php the_permalink(); ?>"><?php 
+					if ( get_field('cwf_title') ) : 
+						the_field('cwf_title');
+					else :
+						the_title(); 
+					endif; ?></a></h2>
 
-</div>
+					<?php if ( get_field('cwf_byline') ) : ?>
+						<p class="byline"><?php the_field('cwf_byline'); ?></p>
+					<?php endif; ?>
+
+			</header>
+	
+			<div class="entry-content">
+				<?php the_excerpt(); ?>
+			</div>
+
+	<?php endwhile; ?>
+
+<?php else : ?>
+	<header>
+		<h2>Sorry, no results found.</h2>
+	</header>
+
+	<img src="<?php echo get_stylesheet_directory_uri() ?>/img/cat.jpg" alt="The Covered w/ Fur Mascot">
+
+<?php endif; ?>
+
+</article>
 
 <?php get_footer(); ?>

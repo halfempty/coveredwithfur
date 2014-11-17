@@ -22,7 +22,8 @@
 
 		$('.flexslider').flexslider({
 			'animation' : 'slide',
-			'slideshow' : false
+			'slideshow' : false,
+			'smoothHeight' : true
 		});
 
 

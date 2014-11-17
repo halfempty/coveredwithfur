@@ -29,25 +29,7 @@
 	.page-template-template-home-php .tj-home-slider .slides li {
 		height: 400px;
 	}
-	
-	.page-template-template-home-php .tj-home-slider .entry-content {
-		max-width: 95%;
-	}
-	
-	.page-template-template-home-php .tj-home-slider .entry-content h1, 
-	.page-template-template-home-php .tj-home-slider .entry-content h2, 
-	.page-template-template-home-php .tj-home-slider .entry-content h3, 
-	.page-template-template-home-php .tj-home-slider .entry-content h4, 
-	.page-template-template-home-php .tj-home-slider .entry-content h5, 
-	.page-template-template-home-php .tj-home-slider .entry-content h6 {
-		font-size: 2em;
-	}
-	
-	.page-template-template-home-php .tj-home-slider .entry-content p {
-		font-size: 1.25em;
-		display: none;
-	}
-	
+		
 	.page-template-template-home-php .tj-home-slider .tj-direction-nav {
 		display: none;
 	}
@@ -88,10 +70,6 @@
 		display: none;
 	}
 
-	.tj-home-testimonials .entry-content p {
-		font-size: 98%;
-	}
-	
 	.tax-gallery-type article.taxonomy-description {
 		max-width: 90%;
 		margin: 0 auto;
@@ -159,14 +137,6 @@
 	.search #primary {
 		width: 90%;
 	} 
-	
-	.blog .entry-content, 
-	.single .entry-content, 
-	.archive .entry-content, 
-	.search .entry-content {
-		max-width: 100%;
-		float: none;
-	}
 	
 	.tj_post_footer_meta {
 		display: none;
@@ -257,10 +227,6 @@
 	.page-template-template-page-full-php article.page {
 		max-width: 90%;
 		margin: 0 auto;
-	}
-	
-	.page-template-template-page-full-php article.page .entry-content {
-		padding: 80px 0 0 0;
 	}
 	
 	.page-template-template-contact-php article.page {
@@ -372,28 +338,14 @@
 		float: right;
 	}
 	
-	.page-template-template-page-sidebar-php article.page .entry-content {
-		max-width: 710px;
-		margin: 0 auto;
-		float: left;
-	}
-	
 	.page-template-template-page-full-php article.page {
 		max-width: 90%;
 		margin: 0 auto;
 	}
 	
-	.page-template-template-page-full-php article.page .entry-content {
-		max-width: 100%;
-	}
-	
 	.page-template-template-contact-php article.page {
 		max-width: 90%;
 		margin: 0 auto;
-	}
-	
-	.page-template-template-page-search-php article.page .entry-content {
-		width: 90%;
 	}
 	
 	.tj-cpt-gallery article.gallery {
@@ -422,14 +374,6 @@
 	
 	.tj_post_footer_meta {
 		display: none;
-	}
-	
-	.blog .entry-content, 
-	.single .entry-content, 
-	.archive .entry-content, 
-	.search .entry-content {
-		max-width: 820px;
-		float: none;
 	}
 	
 	.tj-direction-nav li a.tj-next {
@@ -545,10 +489,6 @@
 		margin: 0 auto;
 	}
 	
-	.page-template-template-page-full-php article.page .entry-content {
-		max-width: 1024px;
-	}
-	
 	.page-template-default article.page {
 		width: 90%;
 	}
@@ -556,10 +496,6 @@
 	.page-template-template-page-full-php article.page {
 		max-width: 90%;
 		margin: 0 auto;
-	}
-	
-	.page-template-template-page-full-php article.page .entry-content {
-		max-width: 100%;
 	}
 	
 	.page-template-template-contact-php article.page {
@@ -579,13 +515,6 @@
 		float: none;
 	}
 	
-	.blog .entry-content, 
-	.single .entry-content, 
-	.archive .entry-content, 
-	.search .entry-content {
-		max-width: 95%;
-		float: none;
-	}
 	
 	.blog .tj_post_footer_meta, 
 	.single .tj_post_footer_meta, 
