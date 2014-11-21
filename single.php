@@ -42,7 +42,7 @@
 		        <ul class="slides">
 		            <?php foreach( $images as $image ): ?>
 		                <li>
-		                    <img src="<?php echo $image['url']; ?>" alt="<?php echo $image['alt']; ?>" />
+		                    <img src="<?php echo $image['sizes']['large']; ?>" alt="<?php echo $image['alt']; ?>" />
 		                    <p><?php echo $image['caption']; ?></p>
 		                </li>
 		            <?php endforeach; ?>

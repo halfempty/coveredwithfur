@@ -924,14 +924,17 @@ a:hover { color: #ccc; }
 
 .cwfstory { max-width: 942px; margin: 0 auto 60px auto; padding: 0 0 80px 0; clear: both; }
 .cwfstory header { text-align: center; margin: 0 0 70px 0; font-family: "Raleway", arial, sans-serif; font-weight: 500;}
-.cwfstory h2 { font-size: 48px; margin: 0; padding-top: 60px; clear: both; line-height: 1.1; }
-.cwfstory .byline { font-size: 36px; line-height: 2; margin: 0; }
+.cwfstory.searchresults header { margin: 0 0 70px 0; }
+
+.cwfstory h2 { font-size: 32px; margin: 0; padding-top: 60px; clear: both; line-height: 1.1; }
+.cwfstory.searchresults h2 { padding-top: 60px; }
+.cwfstory .byline { font-size: 24px; line-height: 2; margin: 0; }
 
 .cwfstory .entry-content { max-width: 100%; margin: auto; line-height: 1.1; }
 
 .pullquote, .pullright { color: #CC0000; text-transform: uppercase; border-top: 1px solid #B3B3B3; border-bottom: 1px solid #B3B3B3; font-family: "Raleway", arial, sans-serif; font-weight: 300; font-size: 24px; line-height: 1.2; padding: .5em 0; margin: 1em 0; }
 
-.dropcaps { font-family: "Raleway", serif; color: #ccc; font-size: 75px; float: left; font-weight: 100; line-height: 1em; margin-right: 0.09em; }
+.dropcaps { font-family: "Raleway", serif; color: #ccc; font-size: 75px; float: left; font-weight: 100; line-height: .8em; margin-right: 0.09em; }
 
 .searchresults header { border-top: 1px solid #b3b3b3; }
 
@@ -945,10 +948,12 @@ a:hover { color: #ccc; }
 
 	.inputmargin { padding: 16px 24px 20px 24px; }
 
-
-
 	.pullquote { font-size: 36px; font-weight: 200; }
 	.pullright { text-transform: none; line-height: 1.3; margin: 0 0 .5em 1em; float: right; max-width: 211px; }
+
+	.cwfstory header { margin-bottom: 112px; }
+	.cwfstory h2 { font-size: 38.4px; padding-top: 96px; }
+	.cwfstory .byline { font-size: 28.8px; }
 
 }
 
@@ -963,6 +968,10 @@ a:hover { color: #ccc; }
 	.cwfnav { width: 50%; float: left; }
 
 	.inputmargin { padding: 16px 48px 20px 48px; }
+
+	.cwfstory header { margin-bottom: 140px; }
+	.cwfstory h2 { font-size: 48px; padding-top: 120px; }
+	.cwfstory .byline { font-size: 36px; }
 
 }
 

@@ -1,5 +1,15 @@
 (function($) {
 
+	function setupSliders() {
+		$('.flexslider').flexslider({
+			'animation' : 'slide',
+			'slideshow' : false,
+			'smoothHeight' : true
+		});
+//		console.log('setup');
+
+	}
+
 	function closeSearch(first) {
 
 		$( ".searchbox" ).slideToggle( "fast", function() {
@@ -20,12 +30,7 @@
 
 	$(document).ready(function() {
 
-		$('.flexslider').flexslider({
-			'animation' : 'slide',
-			'slideshow' : false,
-			'smoothHeight' : true
-		});
-
+		setupSliders();
 
 		// Prevent search submission of default value
 		$('#searchform').submit(function(e){
@@ -49,6 +54,10 @@
 			closeSearch();
 		});
 
+	});
+
+	$(window).load(function() {
+		setupSliders();
 	});
 
 })(jQuery);
